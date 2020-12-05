@@ -62,4 +62,60 @@ ssh -T git@github.com # 测试是否生效
 
 #### 3) 仓库
 
-玩git，首先得有个仓库，获取仓库
+玩git，首先得有个仓库，获取仓库有两种方法
+
+```shell
+git init #在当前文件夹初始化一个仓库
+```
+
+```shell
+git clone url #克隆一个已有仓库
+```
+
+#### 4）git的工作流
+
+![](https://yanhaijing.com/blog/486.png)
+
+#### 5) git的文件状态
+
+![](https://yanhaijing.com/blog/487.png)
+
+### **Quick setup** — if you’ve done this kind of thing before
+
+
+
+Get started by [creating a new file](https://github.com/ZeroAC/myblog/new/main) or [uploading an existing file](https://github.com/ZeroAC/myblog/upload). We recommend every repository include a [README](https://github.com/ZeroAC/myblog/new/main?readme=1), [LICENSE](https://github.com/ZeroAC/myblog/new/main?filename=LICENSE.md), and [.gitignore](https://github.com/ZeroAC/myblog/new/main?filename=.gitignore).
+
+### …or create a new repository on the command line
+
+
+
+```
+echo "# myblog" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:ZeroAC/myblog.git
+git push -u origin main
+                
+```
+
+### …or push an existing repository from the command line
+
+
+
+```
+git remote add origin git@github.com:ZeroAC/myblog.git
+git branch -M main
+git push -u origin main
+```
+
+### …or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+![image-20201205172833040](/home/zeroac/.config/Typora/typora-user-images/image-20201205172833040.png)
+
+
+
