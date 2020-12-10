@@ -1,3 +1,14 @@
+---
+layout: post
+title: ssh概述
+description:全面了解SSH 并应用到github上
+tag: Linux
+---
+
+
+
+
+
 ## ssh概述与应用并配置到github上
 
 ## 一、基本概念
@@ -81,7 +92,7 @@ Ubuntu Desktop 版默认没有安装SSH Server需要手动安装
 sudo apt install openssh-server
 ```
 
-![image-20201203225307325](/home/zeroac/.config/Typora/typora-user-images/image-20201203225307325.png)
+![image-20201203225307325](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203225307325.png)
 
 出现报错 根据提示运行以下即可
 
@@ -165,7 +176,7 @@ ssh-keygen
 
 本机上使用时 不用设置密钥的密码 一路回车即可
 
-![image-20201205143034739](/home/zeroac/.config/Typora/typora-user-images/image-20201205143034739.png)
+![image-20201205143034739](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205143034739.png)
 
 这段话告诉了我们，生成的公钥放在了 `~/.ssh/id_rsa.pub`，私钥放在了 `~/.ssh/id_rsa`
 
@@ -185,7 +196,7 @@ ssh-copy-id  用户名@远程服务器地址
 
 打开[github](https://github.com/)  注册账号后登录 点击右上角 选择setting 然后如下图所示 
 
-![image-20201205150034077](/home/zeroac/.config/Typora/typora-user-images/image-20201205150034077.png)
+![image-20201205150034077](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205150034077.png)
 
 
 
@@ -199,7 +210,7 @@ ssh -T git@github.com
 
 然后如果你看到 `Permission denied (publickey).` 就说明你失败了，请删除所有密钥 重来。如果你看到 `Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.` 那么恭喜你，就说明你成功了！
 
-![image-20201205150719434](/home/zeroac/.config/Typora/typora-user-images/image-20201205150719434.png)
+![image-20201205150719434](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205150719434.png)
 
 
 

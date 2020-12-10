@@ -14,7 +14,7 @@ sudo apt install git
 git help commit
 ```
 
-<img src="/home/zeroac/.config/Typora/typora-user-images/image-20201205144530970.png" alt="image-20201205144530970" style="zoom: 80%;" />
+<img src="http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205144530970.png" alt="image-20201205144530970" style="zoom: 80%;" />
 
 #### 2) 修改git的配置文件
 
@@ -31,7 +31,7 @@ git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
 ```
 
-![image-20201205160412070](/home/zeroac/.config/Typora/typora-user-images/image-20201205160412070.png)
+![image-20201205160412070](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205160412070.png)
 
 还需要配置以下换行符，因为windows上的换行符和mac和类unix不一样，在跨平台时就痛苦了，为了统一，可以将提交到仓库的换行符同配置成unix格式。
 
@@ -48,7 +48,7 @@ git config --global alias.br branch #git br
 git config --global alias.ci commit #git ci
 ```
 
-![image-20201205160629850](/home/zeroac/.config/Typora/typora-user-images/image-20201205160629850.png)
+![image-20201205160629850](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205160629850.png)
 
 如果想把git仓库提交到服务器，则可利用SSH，配置秘钥，实现免密登录
 
@@ -74,7 +74,7 @@ git clone url #克隆一个已有仓库
 
 #### 4）git的工作流
 
-![](https://yanhaijing.com/blog/486.png)
+![](http://qkwfs9p87.hn-bkt.clouddn.com/486.png)
 
 #### 5) git的文件状态
 
@@ -115,7 +115,13 @@ git push -u origin main
 
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
-![image-20201205172833040](/home/zeroac/.config/Typora/typora-user-images/image-20201205172833040.png)
+![image-20201205172833040](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201205172833040.png)
 
 
+
+### 3.常用技巧记录
+
+#### 1）清楚的看到最近的历史记录
+
+![image-20201210210927325](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201210210927325.png)
 

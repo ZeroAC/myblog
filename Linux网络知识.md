@@ -36,16 +36,16 @@
 ping www.baidu.com
 ```
 
-<img src = "/home/zeroac/.config/Typora/typora-user-images/image-20201202215031730.png" style="width:90%"></img>
+<img src = "http://qkwfs9p87.hn-bkt.clouddn.com/image-20201202215031730.png" style="width:90%"></img>
 
 
 查看自己的网络配置
 
-<img src="/home/zeroac/.config/Typora/typora-user-images/image-20201202215851167.png" style="width:30%"></img>
+<img src="http://qkwfs9p87.hn-bkt.clouddn.com/image-20201202215851167.png" style="width:30%"></img>
 
-<img src="/home/zeroac/.config/Typora/typora-user-images/image-20201202215911405.png" style="width:70%"></img>
+<img src="http://qkwfs9p87.hn-bkt.clouddn.com/image-20201202215911405.png" style="width:70%"></img>
 
-<img src="/home/zeroac/.config/Typora/typora-user-images/image-20201202215944015.png" style="width:70%"></img>
+<img src="http://qkwfs9p87.hn-bkt.clouddn.com/image-20201202215944015.png" style="width:70%"></img>
 
 然后就可以进行相关的网络设置
 
@@ -57,7 +57,7 @@ ping www.baidu.com
 ifconfig
 ```
 
-![image-20201203105248029](/home/zeroac/.config/Typora/typora-user-images/image-20201203105248029.png)
+![image-20201203105248029](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203105248029.png)
 
 `lo`表示的就是本地回环网络 local的地址就是这样
 
@@ -78,7 +78,7 @@ sudo ifconfig wlp5s0 10.161.255.190 netmask 255.255.128.0
 
 此时网络不通了..因为手动指定了ip地址 所以dhcp协议失效了
 
-![image-20201203105412656](/home/zeroac/.config/Typora/typora-user-images/image-20201203105412656.png)
+![image-20201203105412656](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203105412656.png)
 
 查看网关
 
@@ -86,7 +86,7 @@ sudo ifconfig wlp5s0 10.161.255.190 netmask 255.255.128.0
 route
 ```
 
-![image-20201202225005153](/home/zeroac/.config/Typora/typora-user-images/image-20201202225005153.png)
+![image-20201202225005153](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201202225005153.png)
 
 发现没有网关了..
 
@@ -114,7 +114,7 @@ ifconfig
 
 发现有ip又变成新的了 也有网关了
 
-![image-20201203111451520](/home/zeroac/.config/Typora/typora-user-images/image-20201203111451520.png)
+![image-20201203111451520](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203111451520.png)
 
 
 
@@ -136,7 +136,7 @@ sudo apt install curl
 
 发现报错
 
-![image-20201203112855517](/home/zeroac/.config/Typora/typora-user-images/image-20201203112855517.png)
+![image-20201203112855517](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203112855517.png)
 
 缺什么就加上什么
 
@@ -153,7 +153,7 @@ sudo apt install curl
 curl www.baidu.com
 ```
 
-![image-20201203113201586](/home/zeroac/.config/Typora/typora-user-images/image-20201203113201586.png)
+![image-20201203113201586](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203113201586.png)
 
 保存网页到某个位置
 
@@ -161,7 +161,7 @@ curl www.baidu.com
 curl www.baidu.com -o baidu.com
 ```
 
-![image-20201203113501982](/home/zeroac/.config/Typora/typora-user-images/image-20201203113501982.png)
+![image-20201203113501982](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203113501982.png)
 
 简单来下载网页也可以用(更方便) `curl`更强大
 
@@ -175,7 +175,7 @@ wget http://www.baidu.com
 host www.baidu.com
 ```
 
-![image-20201203113741298](/home/zeroac/.config/Typora/typora-user-images/image-20201203113741298.png)
+![image-20201203113741298](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203113741298.png)
 
 ### 追踪网络数据包的转发过程
 
@@ -185,7 +185,7 @@ host www.baidu.com
 traceroute 112.80.248.76
 ```
 
-![image-20201203113903249](/home/zeroac/.config/Typora/typora-user-images/image-20201203113903249.png)
+![image-20201203113903249](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203113903249.png)
 
 因为防火墙和智能路由 可能被过滤掉 不显示ip信息 ***
 
@@ -193,7 +193,7 @@ traceroute 112.80.248.76
 
 例如查看长理官网 经过了2个中间路由转发
 
-![image-20201203131948964](/home/zeroac/.config/Typora/typora-user-images/image-20201203131948964.png)
+![image-20201203131948964](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203131948964.png)
 
 ### 显示本机上当前所有连网的本地ip及端口号 以及目标ip端口号
 
@@ -206,7 +206,7 @@ netstat -nt
 - -n直接使用IP地址，而不通过域名服务器。
 - -t显示TCP传输协议的连线状况。
 
-![image-20201203133019745](/home/zeroac/.config/Typora/typora-user-images/image-20201203133019745.png)
+![image-20201203133019745](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203133019745.png)
 
 实例：例如想知道qq上对方的ip地址 就可以给对方发送了个文件 实时接收的那种（否则只能收到腾讯的服务器ip） 然后运行该命令 就可以找到对方的ip 进而定位对方的位置。
 
@@ -220,7 +220,7 @@ netstat -nt
 sudo tcpdump -i wlp5s0
 ```
 
-![image-20201203134530290](/home/zeroac/.config/Typora/typora-user-images/image-20201203134530290.png)
+![image-20201203134530290](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203134530290.png)
 
 此时将不断监听上网信息 可做**中间人攻击**
 
@@ -236,7 +236,7 @@ sudo tcpdump -i wlp5s0 -nnA 'port 80'
 
 -nn：除了-n的作用外，还把端口显示为数值，否则显示端口服务名。
 
-![image-20201203204646829](/home/zeroac/.config/Typora/typora-user-images/image-20201203204646829.png)
+![image-20201203204646829](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203204646829.png)
 
 因为是https 所以是乱码 可以监听这个 http://yuansasi.com/ ip为119.29.101.183
 
@@ -244,7 +244,7 @@ sudo tcpdump -i wlp5s0 -nnA 'port 80'
  sudo tcpdump -i wlp5s0 net 119.29.101.183
 ```
 
-![image-20201203205732565](/home/zeroac/.config/Typora/typora-user-images/image-20201203205732565.png)
+![image-20201203205732565](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203205732565.png)
 
 ### 查看端口占用情况
 
@@ -266,7 +266,7 @@ ps -aux | grep 80
 cat /etc/hosts
 ```
 
-![image-20201203210523700](/home/zeroac/.config/Typora/typora-user-images/image-20201203210523700.png)
+![image-20201203210523700](http://qkwfs9p87.hn-bkt.clouddn.com/image-20201203210523700.png)
 
 ### host解析-修改主机名
 
